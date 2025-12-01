@@ -5,8 +5,10 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions (
-        features = "C:\\Users\\ADMIN\\Documents\\Automation\\AutomatePlaylist\\src\\test\\resources\\appFeatures\\",
-        glue = {"stepDefinition"}
+        features = "C:\\Users\\ADMIN\\Documents\\Automation\\AutomatePlaylist\\src\\test\\resources\\appFeatures",
+        glue = {"stepDefinition"},
+        tags = "@Smoke",
+        plugin ={"rerun:target/failedTC.txt"}
 )
 public class MyTestRunner extends AbstractTestNGCucumberTests {
 

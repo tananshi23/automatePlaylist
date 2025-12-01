@@ -1,10 +1,12 @@
 Feature: Navigate to Youtube homepage and singing in to the account
 
+  @Smoke
 Scenario: Verify user navigates to Youtube Homepage
-Given user is on youtube.com
-When user is able to see the Youtube logo
-And user is able to see the sign button
+Given user is able to see the Youtube logo
+When user is able to see the sign button
 Then user clicks on Sign in Button
+
+
 
 Scenario: Verify user redirects to sign-in window
 Given user provides email id "learn.selenium.automationn@gmail.com"
